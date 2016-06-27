@@ -1,4 +1,4 @@
 #!/bin/bash
-docker build -t companybook/paping .
+docker build -t osblinnikov/paping-docker .
 docker rm -f paping
-docker run --rm --name=paping -t companybook/paping /root/paping ${*:1}
+docker run --rm --name=paping -t osblinnikov/paping-docker /root/paping ${*:1}
